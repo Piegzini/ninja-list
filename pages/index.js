@@ -7,13 +7,13 @@ export default function Home() {
       <>
           <Head>
               <title>Ninja list | Home</title>
-              <meta name="keywords" content="Ninjas" />
+              <meta name="keywords" content="Index" />
           </Head>
           <div>
               <h1 className={styles.title}>Welcome</h1>
               <p className={styles.text}> lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <p className={styles.text}> lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <Link href="/ninjas">
+              <Link href="/ninjas/index">
                   <a className={styles.btn}>See ninja listing</a>
               </Link>
           </div>
