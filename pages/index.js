@@ -8,9 +8,11 @@ import Link from "next/link";
 export default function Home() {
   return (
       <div>
-        <h1>Welcome</h1>
+        <h1 className={styles.title}>Welcome</h1>
+          <p className={styles.text}> lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className={styles.text}> lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <Link href="/ninjas">
-              <a>See ninja listing</a>
+              <a className={styles.btn}>See ninja listing</a>
           </Link>
       </div>
 
