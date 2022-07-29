@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 const Footer = props => {
     return (
-        <div>
+        <footer>
             Copyright &copy; Konrad Piegza 2022
-        </div>
+        </footer>
     );
 };
 
