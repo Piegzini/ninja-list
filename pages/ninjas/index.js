@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios'
 import styles from '../../styles/Ninjas.module.css'
+import Link from "next/link";
 
 export const getStaticProps = async () => {
     try {
@@ -14,24 +15,24 @@ export const getStaticProps = async () => {
     }
 }
 
-const Index = ({ninjas}) => {
+const Ninjas = ({ninjas}) => {
     return (
         <div>
             <h1> List of all ninjas</h1>
 
             {ninjas.map(({id, name}) => (
-                <div key={id}>
+                <Link href={`/ninjas/${id}`} key={id}>
                     <a className={styles.single}>
                         <h3> {name}</h3>
                     </a>
-                </div>
+                </Link>
             ))}
         </div>
     );
 };
 
-Index.propTypes = {
-
+Ninjas.propTypes = {
+    ninjas: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
-export default Index;
+export default Ninjas;
